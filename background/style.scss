@@ -1,0 +1,40 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#text {
+  font-family: 'Permanent Marker', Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 200% 200%;
+  background-image: linear-gradient(
+                  -45deg,
+                  #006949 0%,
+                  #007330 25%,
+                  #157300 51%,
+                  #386900 100%
+  );
+  color: #F6C24D;
+  text-shadow: 1vh 1vh 2px black;
+  animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+  0%{background-position:0% 100%}
+  50%{background-position:100% 100%}
+  100%{background-position:0% 100%}
+}
